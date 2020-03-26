@@ -15,10 +15,10 @@ DB Setup:
   ---------------
   1. Start mongoDB : $ mongod
   2. Launch spring project : $ mvn spring-boot:run
-  3. Open Postman and hit apis :  GET - localhost:9091/employees
-                                  GET - localhost:9091/employees/Abhinav
-                                  PUT - localhost:9091/employees/Abhinav
-                                  DELETE - localhost:9091/employees/Abhinav
-                                  POST - localhost:9091/employees
+  3. Open Postman and hit apis :  (a) GET - localhost:9091/employees
+                                  (b) GET - localhost:9091/employees/Abhinav
+                                  (c) UT - localhost:9091/employees/Abhinav
+                                  (d) DELETE - localhost:9091/employees/Abhinav
+                                  (e) POST - localhost:9091/employees
 
 
