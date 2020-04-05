@@ -21,4 +21,6 @@ DB Setup:
                                   (d) DELETE - localhost:9091/employees/Abhinav
                                   (e) POST - localhost:9091/employees
 
-
+Swagger Docs:
+-------------
+When service get up open url : http://localhost:9091/swagger-ui.html
