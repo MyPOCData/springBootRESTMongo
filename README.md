@@ -24,3 +24,17 @@ DB Setup:
 Swagger Docs:
 -------------
 When service get up open url : http://localhost:9091/swagger-ui.html
+
+Etag Caching logic:
+-------------------
+1. In EmployeeManagmentAPI.java class added :
+    import javax.servlet.Filter;
+    @Bean
+	  public Filter shallowEtagFilter() {
+		  return new ShallowEtagHeaderFilter();
+	  }
+2. Reboot spring project
+3. Open Postman and execute http://localhost:9091/employees/Abhinav GET api
+4. Check header in responce : Etag value will shown
+5. Go to Request header and add key : If-None-Match  and value as Etag value in ""
+6. Re-execute same GET api, you get responce code "304 Not Modified"
